@@ -1,0 +1,19 @@
+Package: prettyfile
+Type: Package
+Title: Pretty Print XML, JSON, CSS and SQL Files
+Version: 0.0.1
+Authors@R: c(
+    person("David", "Gohel", role = c("aut", "cre"),
+    email = "david.gohel@ardata.fr"), 
+    person("Vadim", "Kiryukhin", role = c("cph"),
+       comment = "pretty-data library")
+    )
+Description: Adjust positioning and spacing of XML, JSON, CSS and SQL files 
+ to make the content easier for people to view or remove unnecessary characters 
+ to make a document smaller.
+Copyright: See file COPYRIGHTS.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: V8, rstudioapi, R.utils
+RoxygenNote: 6.0.1.9000

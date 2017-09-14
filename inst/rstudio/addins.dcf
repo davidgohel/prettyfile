@@ -1,0 +1,4 @@
+Name: beautify file
+Description: beautify file
+Binding: beautify_current_doc
+Interactive: true
