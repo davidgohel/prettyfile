@@ -1,6 +1,8 @@
 prettyfile R package
 ================
 
+[![Travis-CI Build Status](https://travis-ci.org/davidgohel/prettyfile.svg?branch=master)](https://travis-ci.org/davidgohel/prettyfile) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/davidgohel/prettyfile?branch=master&svg=true)](https://ci.appveyor.com/project/davidgohel/prettyfile)
+
 An helper package to help:
 
 -   prettify minified XML, JSON, CSS and SQL Files.
