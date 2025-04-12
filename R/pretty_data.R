@@ -60,6 +60,8 @@ beautify_file <- function(file, outfile = file){
     out <- beautify_str(str, format = "json")
   else if( grepl("\\.xml$", file, ignore.case = TRUE) )
     out <- beautify_str(str, format = "xml")
+  else if( grepl("\\.xml\\.rels$", file, ignore.case = TRUE) )
+    out <- beautify_str(str, format = "xml")
   else if( grepl("\\.css$", file, ignore.case = TRUE) )
     out <- beautify_str(str, format = "css")
   else if( grepl("\\.sql$", file, ignore.case = TRUE) )
@@ -118,7 +120,7 @@ beautify_file_xml <- function(file, outfile = file){
 #' beautify_dir("data_files")
 beautify_dir <- function(path, pattern = NULL, beautifier = beautify_file){
   if( is.null(pattern) )
-    pattern <- "(\\.xml(\\.rels){0,1}$|\\.json$|\\.css$|\\.sql$)"
+    pattern <- "(\\.xml\\.rels$|\\.xml$|\\.json$|\\.css$|\\.sql$)"
   files_ <- list.files(path = path, pattern = pattern, full.names = TRUE, recursive = TRUE)
   for(file_ in files_ ){
     beautifier(file = file_)
